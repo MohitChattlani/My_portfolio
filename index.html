@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohit's Blogfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Mohit Chattlani</h1>
+    <p class="tagline">Engineer • Creator • Curious Thinker</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <!-- <a href="#blog">Blog</a> -->
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Mohit, an engineer passionate about solving business challenges with scalable tech. I've worked across domains like supply chain, banking, and e-commerce to deliver efficient, cloud-native data solutions. When I’m not writing code, I’m playing sports, watching thrillers, or thinking about the next big product idea.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Highlighted Projects</h2>
+
+    <div class="blog-post">
+      <h3>Real-Time Spark Streaming Pipeline</h3>
+      <p>Executed a Spark Streaming pipeline to ingest live data from Kafka, reducing data latency by 60% and enabling near real-time analytics for business dashboards.</p>
+    </div>
+    <div class="blog-post">
+      <h3>AWS-Powered Customer Segmentation</h3>
+      <p>Led the delivery of an AWS-native analytics solution for a US bank, improving customer engagement by 15% using dynamic segmentation and branch optimization models.</p>
+    </div>
+
+    <div class="blog-post">
+      <h3>Snowflake and Databricks Supply Chain POC</h3>
+      <p>Led a team of three in developing a Snowflake + Databricks proof-of-concept, which improved delivery efficiency by 30% for a global supply chain client.</p>
+    </div>
+    <div class="blog-post">
+      <h3>Power BI Dashboards on Azure</h3>
+      <p>Developed executive and diagnostic dashboards in Power BI using Azure services, reducing latency and boosting decision speed by 25% across retail operations.</p>
+    </div>
+    <div class="blog-post">
+      <h3>Reconciliation Engine with ELK</h3>
+      <p>Designed a reconciliation pipeline to match Kafka and Hadoop records. Visualized anomalies in ELK, cutting manual reconciliation effort by 80%.</p>
+    </div>
+  </section>
+
+  <!-- <section id="blog">
+    <h2>Recent Posts</h2>
+    <div class="blog-post">
+      <h3><a href="#">How I Built a Streaming Data Pipeline with Spark</a></h3>
+      <p>A deep dive into building scalable real-time pipelines using Apache Spark Streaming, Kafka, and Hive...</p>
+    </div>
+    <div class="blog-post">
+      <h3><a href="#">The Teslaberry Journey: From Idea to Launch</a></h3>
+      <p>Lessons learned launching a learning platform. 500+ users, gamified modules, and the tech stack that powered it...</p>
+    </div>
+    <div class="blog-post">
+      <h3><a href="#">Big Data vs Real-Time Analytics: Choosing the Right Approach</a></h3>
+      <p>Breaking down batch vs stream processing and how I approach each in enterprise-grade projects...</p>
+    </div>
+  </section> -->
+
+  
+
+  <section id="contact">
+    <h2>Work With Me</h2>
+    <p>Interested in working together? Have a project or collaboration in mind? Drop me a message below:</p>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Mohit Chattlani • Built with HTML, CSS & JS • Let's collaborate 🤝</p>
+  </div>
+</body>
+
+</html>
