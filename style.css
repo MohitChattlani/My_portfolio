@@ -6,6 +6,14 @@ body {
       color: #333;
     }
 
+    .social-links a {
+      color: #fff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+
     header {
       background: linear-gradient(to right, #283e51, #485563);
       color: white;
@@ -42,10 +50,25 @@ body {
       color: #ef476f;
     }
 
+    .cta-buttons {
+      margin-top: 1rem;
+    }
+    .cta-buttons .btn {
+      background: #ef476f;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      margin: 0.3rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-buttons .btn:hover {
+      background: #d03d60;
+    }
     section {
       max-width: 1000px;
       margin: auto;
-      padding: 3rem 2rem;
+      padding: 1rem 2rem;
     }
 
     h2 {
