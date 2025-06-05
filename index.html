@@ -131,20 +131,22 @@
   <section id="contact">
     <h2>Work With Me</h2>
     <p>Interested in working together? Have a project or collaboration in mind? Drop me a message below:</p>
-    <form name="contact" netlify>
-      
-      <input type="hidden" name="form-name" value="contact" />
+    <div class="form-container">
+      <form name="contact" netlify>
+        
+        <input type="hidden" name="form-name" value="contact" />
 
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      
-      <input type="text" name="budget" placeholder="Estimated Project Budget (USD)" />
-      <input type="text" name="timeline" placeholder="Timeline in months" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        
+        <input type="text" name="budget" placeholder="Estimated Project Budget (USD)" />
+        <input type="text" name="timeline" placeholder="Timeline in months" />
 
-      <textarea name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
-  
-      <button onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Contact Me' });" type="submit">Send Message</button>
-    </form>
+        <textarea name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+    
+        <button onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Contact Me' });" type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <div class="footer">
