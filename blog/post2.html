@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-Time Streaming with Azure & Databricks | Mohit Chattlani</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style type="text/css">
+    .arch-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  @media (min-width: 768px) {
+    .arch-img {
+      max-width: 80%;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <a href="../index.html" style="text-decoration: none; color: white; font-weight: bold;">← Back to Home</a>
+      <h1>🌐 Real-Time Streaming with Azure & Databricks</h1>
+      <p class="tagline">A hands-on guide to building a modern streaming architecture using Azure services and Apache Spark.</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <p>After experimenting with streaming on platforms like Apache Kafka and AWS Kinesis, I wanted to explore real-time data processing in the <strong>Azure ecosystem</strong>. So, I built a complete streaming solution from scratch—integrating multiple Azure services with Databricks and Spark Structured Streaming.</p>
+
+    <h2>⚙️ Step-by-step Breakdown</h2>
+    <ul>
+      <li><strong>Step 1:</strong> Created an <strong>Azure Event Grid Topic</strong></li>
+      <li><strong>Step 2:</strong> Subscribed the Event Grid to an <strong>Azure Event Hub</strong></li>
+      <li><strong>Step 3:</strong> Sent test events to Event Grid using a <code>curl</code> command which gets passed on to Azure Event Hub</li>
+      <li><strong>Step 4:</strong> Used <strong>Apache Spark Structured Streaming</strong> in Databricks to consume events from the Event Hub</li>
+      <li><strong>Step 5:</strong> Stored the transformed results in <strong>Azure Cosmos DB for MongoDB</strong></li>
+    </ul>
+
+    <!-- Add architecture diagram here -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <img src="../images/azure_event_grid_arch_4.PNG" alt="Azure Streaming Architecture" style="height: auto; border-radius: 8px;" class="arch-img"/>
+      <p style="font-size: 0.9rem; color: #555;">Architecture: Real-time streaming from Azure Event Grid to Cosmos DB via Spark in Databricks</p>
+    </div>
+
+    <p>This end-to-end pipeline demonstrated how flexible and robust Azure’s streaming architecture can be, especially when combined with Databricks and Spark.</p>
+
+    <h2>📂 Full Project & Resources</h2>
+    <p>Everything—from the setup steps to Spark code and architectural decisions—is documented in this GitHub repository:</p>
+    <p><a href="https://github.com/MohitChattlani/Realtime-Streaming-Azure" target="_blank" style="color: #1a73e8;">👉 View the Project on GitHub</a></p>
+
+    <h2>📌 Why This Matters</h2>
+    <p>Real-time streaming is transforming industries—from fraud detection to IoT, marketing analytics, and supply chain optimization. This project is a great starting point for teams looking to leverage Azure-native tools to build scalable pipelines.</p>
+
+    <p>🤝 Always open to collaborating or brainstorming ideas. Feel free to connect or drop a message!</p>
+
+    <p style="color: #555; font-style: italic;">
+      #DataEngineering #Azure #Databricks #ApacheSpark #RealTimeStreaming #StreamingAnalytics #AzureEventHub #CosmosDB #MongoDB #CloudSolutions #BigData #GitHubProjects #LearningByDoing
+    </p>
+
+    <section class="container">
+      <p><a href="../index.html" style="color: #1a73e8;">← Back to Home</a></p>
+    </section>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Mohit Chattlani • Let's collaborate 🤝</p>
+    <div class="social-links">
+      <a href="mailto:chattlanimohit@gmail.com">Email</a> • <a href="tel:+918076133458">Call</a> •
+      <a href="https://linkedin.com/in/mohitchattlani" target="_blank">LinkedIn</a> • <a href="https://github.com/mohitchattlani" target="_blank">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
