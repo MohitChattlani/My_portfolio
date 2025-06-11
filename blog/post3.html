@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azure-Databricks Pipeline Boilerplate | Mohit Chattlani</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style type="text/css">
+    .arch-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .arch-img {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <a href="../index.html" style="text-decoration: none; color: white; font-weight: bold;">← Back to Home</a>
+      <h1>🔧 Azure-Databricks Pipeline Boilerplate Project</h1>
+      <p class="tagline">Kickstart your data engineering journey with a hands-on end-to-end pipeline on Azure.</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <p>Getting started with <strong>Azure and Databricks integration</strong> can be overwhelming for beginners. That’s why I built and shared a <strong>starter boilerplate project</strong> on GitHub—to simplify the learning curve and provide a practical, guided implementation.</p>
+
+    <h2>⚙️ What This Project Covers</h2>
+    <ul>
+      <li>Mounting Azure Data Lake Storage Gen2 to Databricks</li>
+      <li>Creating bronze and silver Delta Lake layers</li>
+      <li>Ingesting raw data into the bronze layer</li>
+      <li>Transforming it into structured data in the silver layer</li>
+      <li>Loading clean data into Azure SQL Database for reporting</li>
+    </ul>
+
+    <!-- Add architecture diagram here -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <img src="../images/azure_databricks_integration.JPG" alt="Azure Streaming Architecture" style="height: auto; border-radius: 8px;" class="arch-img"/>
+      <p style="font-size: 0.9rem; color: #555;">Architecture: Modern Data Pipeline using Azure Delta Lake, & Databricks for transforming raw CSV data into actionable insights via Power BI.</p>
+    </div>
+
+    <p>While Power BI can connect directly to Delta tables, limitations in the community edition encouraged the use of <strong>Azure SQL Database</strong> as a bridge for visualization and analytics.</p>
+
+    <h2>📂 GitHub Repository</h2>
+    <p>All code, setup instructions, and architectural decisions are shared here:</p>
+    <p><a href="https://github.com/MohitChattlani/Azure-Databricks-integration" target="_blank" style="color: #1a73e8;">👉 View the Boilerplate on GitHub</a></p>
+
+    <h2>📌 Why This Project is Useful</h2>
+    <p>If you're learning data engineering or mentoring junior engineers, this project serves as a foundation for understanding the Azure ecosystem and designing production-grade data workflows.</p>
+
+    <p>🤝 I’d love to hear your thoughts or ideas! Open to connect, collaborate, or answer any questions about this setup.</p>
+
+    <p style="color: #555; font-style: italic;">
+      #Azure #Databricks #DataEngineering #PowerBI #BigData #DataPipeline #OpenSource #GitHub #LearningTogether
+    </p>
+
+    <section class="container">
+      <p><a href="../index.html" style="color: #1a73e8;">← Back to Home</a></p>
+    </section>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Mohit Chattlani • Let's collaborate 🤝</p>
+    <div class="social-links">
+      <a href="mailto:chattlanimohit@gmail.com">Email</a> • <a href="tel:+918076133458">Call</a> •
+      <a href="https://linkedin.com/in/mohitchattlani" target="_blank">LinkedIn</a> • <a href="https://github.com/mohitchattlani" target="_blank">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
