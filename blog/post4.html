@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snowflake vs Databricks Ingestion Comparison | Mohit Chattlani</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style type="text/css">
+    .arch-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .arch-img {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <a href="../index.html" style="text-decoration: none; color: white; font-weight: bold;">← Back to Home</a>
+      <h1>❄️⚙️ Snowflake + Databricks vs. Snowflake-only Ingestion</h1>
+      <p class="tagline">A practical comparison between two modern ingestion strategies.</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <p>I recently explored two approaches for ingesting and transforming data using <strong>Databricks and Snowflake</strong>. Here’s a hands-on comparison based on my implementation:</p>
+
+    <h2>🧪 Approach 1: Databricks + Snowflake</h2>
+    <ul>
+      <li>Used Databricks to ingest files and apply Spark-based transformations</li>
+      <li>Loaded the processed data into Snowflake</li>
+      <li>Connected Power BI for dashboarding and reporting</li>
+    </ul>
+    <p><strong>✅ Best suited for:</strong> Robust, scalable pipelines with complex transformation logic</p>
+
+    <h2>⚡ Approach 2: Snowflake-only (UI-driven)</h2>
+    <ul>
+      <li>Uploaded files to internal stages using the Snowflake Web UI</li>
+      <li>Loaded data using built-in <code>COPY INTO</code> commands</li>
+      <li>Performed light SQL-based transformations inside the Snowflake UI</li>
+    </ul>
+    <p><strong>✅ Best suited for:</strong> Quick POCs and no-code prototyping</p>
+
+    <div style="text-align: center; margin: 2rem 0;">
+      <img src="../images/databricks_snowflake.png" alt="Databricks + Snowflake Ingestion Architecture" style="height: auto; border-radius: 8px;" class="arch-img"/>
+      <p style="font-size: 0.9rem; color: #555;">
+      Architecture: Comparative setup of Databricks + Snowflake vs Snowflake-only Ingestion for scalable data pipelines.
+      </p>
+    </div>
+
+    <h2>🛠️ Orchestration</h2>
+    <p>Both approaches can be automated using <strong>Azure Data Factory</strong> or other orchestration tools for daily data pipeline execution.</p>
+
+    <h2>💡 Key Takeaway</h2>
+    <p>Use <strong>Snowflake-only</strong> ingestion for simplicity and speed in prototyping. Choose <strong>Databricks + Snowflake</strong> when scalability and advanced transformations are needed.</p>
+
+    <h2>📂 GitHub Repository</h2>
+    <p>All steps, configurations, and code are available here:</p>
+    <p><a href="https://github.com/MohitChattlani/Databricks-Snowflake-Connector" target="_blank" style="color: #1a73e8;">👉 Explore the comparison project on GitHub</a></p>
+
+    <p>🤝 I'd love to hear how you're leveraging Snowflake or Databricks in your own data workflows. Feel free to share your experiences!</p>
+
+    <p style="color: #555; font-style: italic;">
+      #DataEngineering #Snowflake #Databricks #PowerBI #ETL #DataPipelines #BigData #ADF #CloudAnalytics #UIbasedIngestion #NoCode #ModernDataStack
+    </p>
+
+    <section class="container">
+      <p><a href="../index.html" style="color: #1a73e8;">← Back to Home</a></p>
+    </section>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Mohit Chattlani • Let's collaborate 🤝</p>
+    <div class="social-links">
+      <a href="mailto:chattlanimohit@gmail.com">Email</a> • <a href="tel:+918076133458">Call</a> •
+      <a href="https://linkedin.com/in/mohitchattlani" target="_blank">LinkedIn</a> • <a href="https://github.com/mohitchattlani" target="_blank">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
