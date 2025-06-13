@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>From Basics to LLMs | Mohit Chattlani</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .arch-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .arch-img {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <a href="../index.html" style="text-decoration: none; color: white; font-weight: bold;">← Back to Home</a>
+      <h1>🧠 From Basics to LLMs: My Hands-On Journey into Machine Learning Using Azure ML Studio</h1>
+      <p class="tagline">A beginner-friendly yet powerful exploration of machine learning pipelines using low-code tools</p>
+    </div>
+  </header>
+
+  <section class="container">
+
+    <h2>🔍 Introduction</h2>
+    <p>With all the excitement around Machine Learning, Data Science, and especially Large Language Models (LLMs), I decided to get hands-on and explore the fundamentals of how ML works—step by step.</p>
+    <p>After diving into code-heavy notebooks, I shifted my approach to learning visually and conceptually by building projects using <strong>Azure ML Studio’s pipeline designer</strong>, a low-code/no-code platform that makes it easier to understand and deploy ML workflows.</p>
+
+    <h2 style="font-size: 1.8rem; margin-top: 2rem;">📊 The Machine Learning Workflow – Step by Step</h2>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">1. Problem Identification</h3>
+      <p style="font-size: 1rem; color: #444;">
+        We need to clearly define the problem. Are we trying to predict a number (regression)? Classify an outcome (classification)? Detect anomalies?
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">2. Data Selection</h3>
+      <p style="font-size: 1rem; color: #444;">
+        Identify relevant data sources that represent the problem domain well.
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">3. Feature Engineering</h3>
+      <p style="font-size: 1rem; color: #444;">
+        Pick meaningful independent features (variables) that affect the outcome. Even small changes in feature selection can impact accuracy.
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">4. Data Cleaning</h3>
+      <p style="font-size: 1rem; color: #444;">
+        Clean the data to handle missing values (e.g., using <code>fillna()</code>), remove duplicates, and ensure consistency.
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">5. Data Splitting</h3>
+      <p style="font-size: 1rem; color: #444;">
+        Divide data into training and testing sets (e.g., 70/30).
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">6. Model Selection</h3>
+      <p style="font-size: 1rem; color: #444;">
+      Choose models like Linear Regression (for prediction) or Logistic Regression (for classification).
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">7. Model Training</h3>
+      <p style="font-size: 1rem; color: #444;">
+      Feed training data to let the model learn patterns.
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">8. Model Evaluation</h3>
+      <p style="font-size: 1rem; color: #444;">
+      Assess performance using accuracy, precision, recall, etc.
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">9. Accuracy Measurement</h3>
+      <p style="font-size: 1rem; color: #444;">
+      Compare actual vs. predicted outcomes.
+      </p>
+    </div>
+
+    <div style="margin: 1.5rem 0;">
+      <h3 style="font-size: 1.3rem; font-weight: bold; margin-bottom: 0.5rem;">10. Visualisation</h3>
+      <p style="font-size: 1rem; color: #444;">
+      Use scatterplots, confusion matrices, and more for insights.
+      </p>
+    </div>
+
+    <h2>🤖 From Traditional ML to LLMs</h2>
+    <p>Interestingly, this structured approach also applies to more advanced use cases like training LLMs (Large Language Models):</p>
+    <ul>
+      <li>You feed a prompt-response dataset</li>
+      <li>Fine-tune a model like GPT for dialogue or classification</li>
+      <li>Evaluate, iterate, and deploy — similar structure, greater scale</li>
+    </ul>
+
+    <h2>🔧 Project Implementation Using Azure ML Studio</h2>
+    <p>To solidify my understanding, I used <strong>Azure ML Studio’s pipeline designer</strong> to visually build an ML pipeline, including all key steps like cleaning, training, and evaluation.</p>
+    <p>The drag-and-drop interface helped me focus on learning the logic, not the syntax—ideal for beginners and quick prototypes.</p>
+
+    <!-- Add architecture diagram here -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <img src="../images/azure_ml_pipeline_2.JPG" alt="Azure Streaming Architecture" style="height: auto; border-radius: 8px;" class="arch-img"/>
+      <p style="font-size: 0.9rem; color: #555;">Azure ML Studio Pipeline Designer</p>
+    </div>
+
+    <h2>🧭 Conclusion</h2>
+    <p>Machine learning may seem overwhelming, but breaking it into logical steps makes it accessible. Tools like Azure ML Studio bridge the gap between theory and practice, especially for visual learners or those new to coding.</p>
+
+    <p>💬 Have you tried building ML pipelines using low-code platforms? Would love to hear about your experience!</p>
+
+    <p style="color: #555; font-style: italic;">
+      #MachineLearning #LLM #AzureML #DataScience #AI #NoCode #LowCode #MLWorkflow #OpenToWork #MohitChattlani
+    </p>
+
+    <section class="container">
+      <p><a href="../index.html" style="color: #1a73e8;">← Back to Home</a></p>
+    </section>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Mohit Chattlani • Let’s Collaborate 🤝</p>
+    <div class="social-links">
+      <a href="mailto:chattlanimohit@gmail.com">Email</a> • <a href="tel:+918076133458">Call</a> •
+      <a href="https://linkedin.com/in/mohitchattlani" target="_blank">LinkedIn</a> • <a href="https://github.com/mohitchattlani" target="_blank">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
