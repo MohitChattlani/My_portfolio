@@ -152,10 +152,6 @@ body {
       border-radius: 12px;
     }
 
-    .about-text {
-      max-width: 600px;
-    }
-
     /* MEDIA QUERIES */
     @media (min-width: 768px) {
       .about {
