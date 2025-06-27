@@ -203,21 +203,23 @@
 
   <section id="contact">
     <h2>Work With Me</h2>
-    <p>Interested in working together? Have a project or collaboration in mind? Drop me a message below:</p>
+    <p>Got a project in mind or just exploring ideas? I'd love to hear from you. Fill out the form and I’ll get back to you within 24 hours.</p>
     <div class="form-container">
       <form name="contact" netlify>
         
         <input type="hidden" name="form-name" value="contact" />
 
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        
-        <input type="text" name="budget" placeholder="Estimated Project Budget (USD)" />
-        <input type="text" name="timeline" placeholder="Timeline in months" />
+        <input type="text" name="name" placeholder="What's your name? *" required />
+        <input type="email" name="email" placeholder="Your best email *" required />
 
-        <textarea name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+        <textarea name="message" rows="5" placeholder="Tell me a bit about what you're building or need help with... *" required></textarea>
+        
+        <input type="text" name="budget" placeholder="Rough budget (USD, optional)" />
+        <input type="text" name="timeline" placeholder="Expected timeline? (optional)" />
+
+        
     
-        <button onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Contact Me' });" type="submit">Send Message</button>
+        <button onclick="gtag('event', 'click', { 'event_category': 'Button', 'event_label': 'Contact Me' });" type="submit">Let's Connect</button>
       </form>
     </div>
   </section>
