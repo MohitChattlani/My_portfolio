@@ -32,12 +32,14 @@ body {
     }
 
     nav {
-      text-decoration: underline;
-      font-size: 1.4rem;
+      top: 0;
+      background-color: #fff;
+      z-index: 1000;
       padding: 1rem;
       display: flex;
       justify-content: center;
       gap: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     /* Mobile-specific override */
@@ -188,3 +190,25 @@ body {
         margin: 0 auto; /* center the image */
       }
     }
+
+
+.hero-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #1e88e5; /* medium blue */
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(30, 136, 229, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #1565c0; /* darker blue */
+}
