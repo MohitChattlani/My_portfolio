@@ -35,6 +35,29 @@
 
     gtag('config', 'G-KXXNKVZT3C');
   </script>
+  <style type="text/css">
+    
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+    }
+
+  </style>
 </head>
 <body>
   <header class="hero">
@@ -96,9 +119,17 @@
     </ul>
 
     <h2>🎥 Demo Walkthrough</h2>
-    <p>Curious to see our solution in action? Watch the full walkthrough here:<br>
-      <a href="https://www.youtube.com/watch?v=E0BFVL5NxB0" target="_blank">Smart Aviation Insights | Team Data Dribblers</a>
-    </p>
+    <p>Curious to see our solution in action? Watch the full walkthrough below:</p>
+    <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/E0BFVL5NxB0" 
+          title="Smart Aviation Insights | Team Data Dribblers"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    <br>
     <p>Want to dive into the code or explore the dashboards yourself? Check out the full project on GitHub:<br>
       <a href="https://github.com/MohitChattlani/Databricks-Smart-Insights-challenge-Data-Dribblers" target="_blank">Databricks Smart Insights – GitHub Repo</a>
     </p>
