@@ -32,33 +32,72 @@ body {
     }
 
     nav {
-      top: 0;
-      background-color: #fff;
-      z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2b2d42;
+    /*background: linear-gradient(to right, #0f2027, #0d3b2e);*/
+    padding: 1rem;
+    color: white;
+    position: relative;
+    z-index: 1000; /* keeps navbar always on top */
+  }
+
+  nav .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  nav .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  /* Hamburger button */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+
+  /* Mobile view */
+  @media (max-width: 768px) {
+    nav .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #2b2d42;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
       padding: 1rem;
+      z-index: 9999; /* ensures dropdown shows above image */
+    }
+
+    nav .nav-links.active {
       display: flex;
-      justify-content: center;
-      gap: 2rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    /* Mobile-specific override */
-    @media (max-width: 767px) {
-      nav {
-        font-size: 1rem;
-      }
+    .hamburger {
+      display: flex;
     }
 
-    nav a {
-      text-decoration: none;
-      color: #2b2d42;
-      font-weight: 600;
-      transition: 0.2s ease-in-out;
-    }
+  }
 
-    nav a:hover {
-      color: #ef476f;
-    }
 
     .cta-buttons {
       margin-top: 1rem;
@@ -169,6 +208,19 @@ body {
         text-align: left;
       }
 
+      nav {
+        justify-content: space-around; /* center contents */
+        gap: 2rem; /* spacing between logo and links */
+      }
+
+      nav .logo {
+        margin-right: 2rem;
+      }
+
+      nav .nav-links {
+        display: flex !important; /* force visible */
+      }
+
     }
 
     .hero {
@@ -189,7 +241,6 @@ body {
         margin: 0 auto; /* center the image */
       }
     }
-
 
 .hero-cta {
   text-align: center;
