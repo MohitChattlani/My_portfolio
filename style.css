@@ -242,6 +242,17 @@ body {
       }
     }
 
+.video-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.intro-video {
+  max-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
 .hero-cta {
   text-align: center;
   margin-top: 2rem;
